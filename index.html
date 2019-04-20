@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan McGee | Home</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:300' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body
+    {
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-top: 5em;
+    }
+
+    #name
+    {
+      font-size: 10em;
+      font-family: inherit;
+      font-weight: 300;
+      display: block;
+    }
+
+    #content
+    {
+      position: absolute;
+      font-family: Montserrat;
+      right: auto;
+    }
+
+    #about
+    {
+      font-family: inherit;
+      border-top: solid thin black;
+      padding-top: .5em;
+      font-size: 4em;
+      letter-spacing: -5px;
+    }
+
+    #profile
+    {
+      float: right;
+      margin-right: 2em;
+    }
+
+    .slideshow
+    {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: white;
+    }
+    .slides
+    {
+      max-width: 800px;
+      max-height: 500px;
+      margin: auto;
+      background-color: inherit;
+    }
+
+    @media screen and (max-width: 1650px)
+    {
+      #profile{float: none; max-width: 50%;}
+      #content{display: block; margin: 0;}
+      #name{font-size: 5em;}
+      #about{font-size: 3em;}
+      .slides{width: 200px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navlist">
+    <ul>
+      <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="mailto:ram6064@rit.edu"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="http://twitter.com/freemcgee33"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="http://linkedin.com/in/ryan-mcgee-b5820b175"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="http://github.com/superrm11"><i class="fa fa-github"></i></a></li>
+    </ul>
+  </div>
+
+  <figure id="profile"><img src="media/profile_pic.png" width=500 height=500></figure>
+
+  <div id="content">
+    <div id="name">Ryan McGee</div>
+    <div id="about">Electrical Engineering Student at RIT</div>
+    <div class="slideshow">
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <img src="media/minimcgeev1.png" alt="MiniMcGee Robot Version 1" class="slides" style="display: block;">
+      <img src="media/minimcgeev2.png" alt="MiniMcGee Robot Version 2" class="slides" >
+      <img src="media/swerve_wheel1.png" alt="Swerve Wheel in Inventor" class="slides" >
+      <img src="media/robot_arm_v1.png" alt="Robot Arm Version 1" class="slides" >
+      <img src="media/robot_arm_v2.png" alt="Robot Arm In Development" class="slides" >
+    </div>
+  </div>
+
+  <script src="slideshow.js"></script>
+</body>

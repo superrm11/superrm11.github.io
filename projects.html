@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan McGee | Projects</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:300' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    h2
+    {
+      text-align: center;
+      background-color: inherit;
+    }
+    h3{margin-top: 1em;}
+    p
+    {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .project_list
+    {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .project_entry
+    {
+      background-color: white;
+      border: solid black medium;
+      width:300px;
+      height:auto;
+    }
+    .image{background-color: white; height:300px; width:300px;}
+    .entry_container
+    {
+      position: relative;
+      background-color: white;
+    }
+    .overlay
+    {
+      background-color: black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      opacity: 0;
+      transition: .3s ease;
+    }
+    .text
+    {
+      background-color: inherit;
+      color: white;
+      margin: 1em;
+    }
+    .text li {background-color:inherit;}
+    .entry_container:hover .overlay{opacity: .9;}
+    .links
+    {
+      background-color: transparent;
+      position: absolute;
+      bottom: 1em;
+    }
+    .links a
+    {
+      background-color: inherit;
+      text-decoration: none;
+    }
+
+    .descriptions
+    {
+      margin: 5em;
+      border-top: solid black thin;
+      padding-top: 5em;
+    }
+
+    .description_entry
+    {
+      margin-bottom: 5em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      align-items: center;
+    }
+    .entry_info{grid-column: 1;}
+    .slides{width: 350px;}
+    .slides iframe {width: 350px; height: 500px;}
+    .slideshow{grid-column: 2;}
+    .external_link
+    {
+      margin: 1em;
+      padding: .2em;
+      text-decoration: none;
+      border: solid thin #7F0000;
+      color: #7F0000;
+      font-weight: bold;
+    }
+    .external_link:hover{color: white; background-color: #7F0000;}
+
+  </style>
+</head>
+<body>
+  <div id="navlist">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" style="text-decoration: underline;">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </div>
+
+  <div style="text-align: center; margin-top:1em;margin-bottom: 1em;font-family:Montserrat;font-size: 4em;">
+    Personal Projects
+  </div>
+
+  <div class="project_list">
+
+    <div class="project_entry">
+      <h2>MiniMcGeeV1</h2>
+      <div class="entry_container">
+        <img src="media/minimcgeev1.png" alt="MiniMcGeeV1 Image" class="image">
+        <a href="#minimcgeev1">
+        <div class="overlay">
+            <ul class="text">
+              <li>Powered by Raspberry Pi 3</li>
+              <li>Mecanum drive System</li>
+              <li>Programmed in Java</li>
+              <li>Bluetooth and WiFi control</li>
+              <li>3D printed chassis and wheels</li>
+            </ul>
+        </div>
+      </a>
+      </div>
+    </div>
+
+    <div class="project_entry">
+      <h2>MiniMcGeeV2 [WIP]</h2>
+      <div class="entry_container">
+        <img src="media/minimcgeev2.png" alt="MiniMcGeeV2 Image" class="image">
+        <a href="#minimcgeev2">
+        <div class="overlay">
+            <ul class="text">
+              <li>Powered by Raspberry Pi Zero</li>
+              <li>Swerve drive system</li>
+              <li>Programmed in Java</li>
+              <li>Bluetooth and WiFi control</li>
+              <li>3D printed chassis and wheels</li>
+              <li>Work In Progress</li>
+            </ul>
+        </div>
+      </a>
+      </div>
+    </div>
+
+    <div class="project_entry">
+      <h2>Robot Arm V1</h2>
+      <div class="entry_container">
+        <img src="media/robot_arm_v1.png" alt="Robot Arm V1 Image" class="image">
+        <div class="overlay">
+            <ul class="text">
+              <li>Powered by Arduino</li>
+              <li>Driven by 5 servos</li>
+              <li>Analog joystick control</li>
+              <li>USB joystick control</li>
+              <li>4 axis control</li>
+              <li>3D printed</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project_entry">
+      <h2>Robot Arm V2 [WIP]</h2>
+      <div class="entry_container">
+        <img src="media/robot_arm_v2.png" alt="Robot Arm V2 Image" class="image">
+        <div class="overlay">
+            <ul class="text">
+              <li>Powered by Arduino</li>
+              <li>Driven by servos and stepper motors</li>
+              <li>Recycled RC analog joysticks</li>
+              <li>USB joystick control</li>
+              <li>3 axis control</li>
+              <li>3D printed</li>
+              <li>Work In Progress</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project_entry">
+      <h2>Master Sword</h2>
+      <div class="entry_container">
+        <img src="media/master_sword.png" alt="Master Sword Image" class="image">
+        <div class="overlay">
+            <ul class="text">
+              <li>3D printed in PLA</li>
+              <li>Printed in 10 different pieces</li>
+              <li>Sanded and finished with primer</li>
+              <li>Painted in acrylic, with a sprayed silver</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="descriptions">
+    <div id="minimcgeev1" class="description_entry">
+      <div class="entry_info">
+        <h1>MiniMcGee Version 1 (2017-2018)</h1>
+        <p>
+        MiniMcGee is the name of my very first remote control project. It was meant to be a test of my technical skill, as well as a hobby project.
+        </p>
+        <h3>Overview</h3>
+        <ul>
+          <li>3D Printed Chassis and Wheels (Special thanks to <a href="https://www.thingiverse.com/thing:1358552">Jonah_Innoart</a>) in PLA</li>
+          <li>Powered by a 2-cell Lithium Polymer battery, 300mAh and 600mAh</li>
+          <li>Custom battery management system driven by AT-tiny microcontroller</li>
+          <li>2x L298N H-bridge Motor Drivers</li>
+          <li>4x 150RPM n20 geared brushed motors</li>
+          <li>Raspberry Pi Camera attached to a servo for pitch control, streamed to a web server</li>
+          <li>Control mode selector button and control indicator RGB LED</li>
+          <li>Raspberry Pi model 3B running a Java program with <a href="https://github.com/jinput/jinput">Jinput</a> and <a href="https://pi4j.com">Pi4J</a></li>
+          <li>Controlled with a Bluetooth Xbox 1 controller or over WiFi with WASDQE keyboard controls</li>
+        </ul>
+        <h3>Development</h3>
+        <p>
+          The first step to making this was planning: Since I already had experience in 3d CAD and printing, wiring and programming, I decided I wanted
+          this bot to do something that would challenge my skills. Therefore, I researched and found a 3D model for mecanum wheels, a type of drivetrain
+          that allows the robot to not only move forwards and backwards, but laterally as well. I ended up designing the CAD for the chassis in Autodesk
+          Inventor around the model for the wheels. In order to fit all the electronic components, I needed to use a layered approach, making the first
+          layer for the battery and motors, the second for the Pi and servo, and the third for the motor controllers and BMS.
+        </p>
+        <h3>Future Plans</h3>
+        <p>
+          This project can be used as a test bed in the future for software development, such as vision tracking and following programs using the camera,
+          and is useful for community outreach. It has already seen two community STEM events, and helps inspire elementary students to pursue STEM
+          careers.
+        </p>
+        <a class="external_link" href="http://github.com/superrm11/minimcgee">Github</a>
+        <a class="external_link" href="https://photos.app.goo.gl/TmshhYfUhZ9ce68b7">Gallery</a>
+        <a class="external_link" href="https://www.thingiverse.com/thing:3511015">CAD Model</a>
+      </div>
+      <div class="slideshow">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <img src="media/minimcgeev1_layout.jpg" alt="Component Layout" class="slides" style="display:block;">
+        <img src="media/minimcgeev1_base.jpg" alt="Base Printed" class="slides">
+        <img src="media/minimcgeev1_wiring.jpg" alt="Wiring the Drive Motors" class="slides">
+        <img src="media/minimcgeev1_layering.jpg" alt="Adding Raspberry pi layer" class="slides">
+        <img src="media/minimcgeev1_unwired.jpg" alt="Construction finished, awaiting wires" class="slides">
+        <img src="media/minimcgeev1_outreach.png" alt="Demonstrating robot to elementary school students" class="slides">
+      </div>
+    </div>
+
+    <div id="minimcgeev2" class="description_entry">
+      <div class="entry_info">
+        <h1>MiniMcGee Version 2.1 (2018-present)</h1>
+        <p>The second robot I've built, taking what I learned from version 1 and improving on it, with some minor differences.</p>
+        <h3>Overview</h3>
+        <ul>
+          <li>3D Printed Chassis and Wheels, designed in Autodesk Inventor</li>
+          <li>Powered by 2 14500 Lithium Ion cells in parallel, charged via micro-USB</li>
+          <li>Non-continuous swerve drive with 400rpm drive wheels and stepper motors for direction</li>
+          <li>Built on the Version 1 platform, with slight changes to the drive system</li>
+          <li>Designed to be expandable with mounting options for an arduino mini</li>
+        </ul>
+        <h3>Development</h3>
+        <p>
+          The next iteration of the MiniMcGee robot series, version 2 changes the driving subsystem to use a "swerve" style drive. This means that each
+          wheel has it's own direction control, allowing the robot to move in all directions, just like mecanum. However, this drive system is much faster,
+          and in theory is more powerful and maneuverable.
+        </p>
+        <h3>Revisions</h3>
+        <p>
+          The working product is revision 2.1, but 2.0 never left the prototyping stage. 2.0 was envisioned being a full swerve sytem, allowing 360 degree
+          movement on the direction motors, but the gearing proved to be too difficult to 3D print, and so 2.1 was created as a partial swerve, which still
+          allowed about 120 degrees of rotation in each direction, but is much less maneuverable and proves a less capable testing plaform for code.
+        </p>
+        <h3>Future Plans</h3>
+        <p>
+          While revision 2.1 is functional and a working proof of concept, I intend to move forward in revision 2.2, which should allow a true swerve drive.
+          The stepper motors used for direction proved to be too weak and lose their "home" position too fast, so a brushed sensored solution is in the works.
+        </p>
+        <a class="external_link" href="https://github.com/superrm11/MiniMcGeeV2">Github</a>
+        <a class="external_link" href="https://photos.app.goo.gl/2zUikkyRRp2dGM538">Gallery</a>
+        <a class="external_link" href="https://www.thingiverse.com/thing:3564919">CAD Model</a>
+      </div>
+      <div class="slideshow">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <img src="media/swerve_wheel1.png" alt="Initial designing of swerve drive" class="slides" style="display: block;">
+        <img src="media/swerve_wheel2.jpg" alt="CAD design finished for initial design of swerve drive" class="slides">
+        <img src="media/minimcgeev2_wiring.jpg" alt="Wiring the robot" class="slides">
+        <img src="media/minimcgeev2_done1.jpg" alt="Robot is finished!" class="slides">
+        <img src="media/minimcgeev2_done2.jpg" alt="Robot is Finished, different angle" class="slides">
+        <video width="350" controls class="slides">
+          <source src="media/minimcgeev2_wheel.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <video width="350" controls class="slides">
+          <source src="media/minimcgeev2_testing.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <video width="350" controls class="slides">
+          <source src="media/minimcgeev2_drive.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+    </div>
+  </div>
+<script src="slideshow.js"></script>
+</body>
