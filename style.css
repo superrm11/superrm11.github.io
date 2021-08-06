@@ -4,6 +4,10 @@ body
   height: 100vh;
 }
 
+h1
+{
+  font-family: Montserrat;
+}
 
 .navbar {
   background: #7F0000;
