@@ -1,3 +1,10 @@
+body
+{
+  padding-top: 2.5em;
+  height: 100vh;
+}
+
+
 .navbar {
   background: #7F0000;
   padding: 0px;
@@ -19,4 +26,9 @@
   color:white;
   background-color: #590000;
   transition-duration: .3s;
+}
+
+.nav-link:focus
+{
+  color: white;
 }
